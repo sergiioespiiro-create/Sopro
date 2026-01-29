@@ -1,0 +1,123 @@
+/* RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* BODY */
+body {
+  background: #ffffff;
+  text-align: center;
+  padding: 20px 30px;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img {
+  height: 55px;
+}
+
+/* TÍTULO */
+h1 {
+  font-size: 28px;
+  margin: 30px 0 50px 0;
+}
+
+/* CONTAINER */
+#container {
+  width: 90vw;
+  max-width: 1000px;
+  height: 48px;
+  margin: 0 auto;
+  position: relative;
+  background: #e5e5e5;
+  border-radius: 30px;
+  overflow: visible;
+}
+
+/* BARRA */
+#barra {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  border-radius: 30px;
+  transition: width 6s linear;
+  z-index: 1;
+}
+
+/* SOPRO */
+.barra-sopro {
+  background: linear-gradient(
+    90deg,
+    #ff0000 0%,
+    #ff7a00 20%,
+    #ffe600 35%,
+    #b6ff00 55%,
+    #5fd100 75%,
+    #008000 100%
+  );
+}
+
+/* RETORNO */
+.barra-retorno {
+  background: #1e90ff;
+}
+
+/* RISQUINHOS */
+.marcador {
+  position: absolute;
+  top: -10px;
+  width: 2px;
+  height: 68px;
+  background: #000;
+  z-index: 5;
+}
+
+/* 🔢 NÚMEROS ACIMA DAS RISQUINHAS */
+.numero {
+  position: absolute;
+  top: -34px;
+  transform: translateX(-50%);
+  font-size: 14px;
+  font-weight: bold;
+  color: #000;
+  z-index: 10;
+  pointer-events: none;
+}
+
+/* TEXTO */
+#mensagem {
+  font-size: 22px;
+  margin: 35px 0 25px 0;
+}
+
+/* BOTÃO */
+button {
+  padding: 14px 40px;
+  font-size: 18px;
+  background: #1e90ff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+/* TABLET */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  #mensagem {
+    font-size: 20px;
+  }
+}
+
